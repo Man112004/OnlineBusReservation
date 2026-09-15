@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Bus Reservation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+        
+        .container {
+            width: 500px;
+            margin: 100px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+        }
+        
+        input {
+            width: 95%;
+            padding: 12px;
+            margin: 10px 0;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Online Bus Reservation</h1>
+
+        <form action="SearchBusServlet" method="post">
+
+            <input type="text" name="source" placeholder="Enter Source" required>
+
+            <input type="text" name="destination" placeholder="Enter Destination" required>
+
+            <button type="submit">
+            Search Bus
+        </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
